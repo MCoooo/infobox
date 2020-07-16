@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MCoooo/infobix.git"
+    "url": "https://github.com/MCoooo/infobox.git"
   },
   "scripts": {
     "start" : "electron .",
