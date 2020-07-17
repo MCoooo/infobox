@@ -16,6 +16,7 @@
     <link rel="import" href="sections/dialog.html">
 	<link rel="import" href="sections/ipcremote.html">
 	<link rel="import" href="sections/sessiondata.html">
+	<link rel="import" href="sections/applicationdata.html">
 	</head>
 	<body>
 
@@ -25,14 +26,15 @@
 					<nav>
 						<ul>
 							<li><a id="welcome-menu" data-section="welcome" href="#">Welcome</a></li>
+							<li><a id="sessiondata-menu" data-section="sessiondata" href="#">Session data</a></li>
+							<li><a id="applicationdata-menu" data-section="applicationdata" href="#">Applications</a></li>
 							<li><a id="whoweare-menu" data-section="ipcremote" href="#">IPC/Remote</a></li>
 							<li><a id="dialog-menu" data-section="dialog" href="#">Dialog</a></li>
 							<li><a id="getintouch-menu" data-section="getintouch" href="#">Get in touch</a></li>
-							<li><a id="sessiondata-menu" data-section="sessiondata" href="#">Session data</a></li>
 						</ul>
 					</nav>
 					<div class="version-info">
-						Tested with Electron v5.0.8
+						<a href="#logo" class="image"><img src="assets/images/axa_logo_open_white_rgb.png" alt="AXA LOGO" width="210" height="70" data-position="center center" /></a>
 					</div>
 					<div class="version-info">
 						(Currently running Electron v<script>document.write(process.versions.electron)</script>)

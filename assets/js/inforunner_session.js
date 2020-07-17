@@ -8,6 +8,7 @@ let data = JSON.parse(rawdata);
 console.log(data);
 const ulist = document.getElementById('ulist') //document.querySelector("ul.user");
 const mlist = document.getElementById('mlist');
+const runnerlist = document.getElementById('runnerlist');
 
 for(var attributename in data){
     if(attributename != 'LayerList'){
@@ -16,8 +17,12 @@ for(var attributename in data){
         li.appendChild(itemText);
         if((attributename=="Username") || (attributename=="LogOnTime")){
             ulist.appendChild(li);
-        } else {
+        }
+        if((attributename=="Hostname") || (attributename=="IPAddress") || (attributename=="LayerCount")){
             mlist.appendChild(li);
+        }
+        if((attributename=="RunnerVersion")||(attributename=="TimeStamp")|| (attributename=="Duration")){
+            runnerlist.appendChild(li);
         }
     } 
 }
