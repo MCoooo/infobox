@@ -1,19 +1,36 @@
 'use strict';
 
-const sessionfs = require('fs');
+const welcomefs = require('fs');
 
-let sessionRawData = sessionfs.readFileSync('inforunner.json');
-let sessionData = JSON.parse(sessionRawData);
+let welcomeRawData = welcomefs.readFileSync('inforunner.json');
+let welcomeData = JSON.parse(welcomeRawData);
 
-console.log(sessionData);
+console.log(welcomeData);
+
+const infoLoad = document.getElementById('infoLoad');
+if(welcomeData != null){
+  infoLoad.innerText = "Data imported";
+} else {
+  infoLoad.innerText = "No data detect. Select Get Data";
+}
+
+//const info = document.querySelector("link[rel=import][href='sections/welcome.html']").querySelector("#InfoLoad").innerHTML = "foo";
+//.import.querySelector("#infoLoad")
+
+
+
+//const infoLoad = document
+
+/*
+console.log(data);
 const ulist = document.getElementById('ulist') //document.querySelector("ul.user");
 const mlist = document.getElementById('mlist');
 const runnerlist = document.getElementById('runnerlist');
 
-for(var attributename in sessionData){
+for(var attributename in data){
     if(attributename != 'LayerList'){
         const li = document.createElement('li');
-        const itemText = document.createTextNode(attributename+": "+sessionData[attributename]);
+        const itemText = document.createTextNode(attributename+": "+data[attributename]);
         li.appendChild(itemText);
         if((attributename=="Username") || (attributename=="LogOnTime")){
             ulist.appendChild(li);
@@ -26,7 +43,7 @@ for(var attributename in sessionData){
         }
     } 
 }
-/*
+
 const layerList = document.getElementById('layerList');
 
 console.log(ulist);

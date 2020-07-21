@@ -21,6 +21,7 @@ const BrowserWindow = electron.BrowserWindow
 let mainWindow
 let secondWindow
 
+
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({titleBarStyle: 'hidden',

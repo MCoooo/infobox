@@ -1,24 +1,25 @@
 'use strict';
 
-//const fs = require('fs');
+const appfs = require('fs');
 
-//let rawdata = fs.readFileSync('inforunner.json');
-//let data = JSON.parse(rawdata);
+let appRawData = appfs.readFileSync('inforunner.json');
+let appData = JSON.parse(appRawData);
 
 
 const layerList = document.getElementById('layerList');
 console.log("layer list");
 
 
-for(var attributename in data){
-    console.log(attributename+": "+data[attributename]);
+for(var attributename in appData){
+    console.log(attributename+": "+ appData[attributename]);
     if(attributename == 'LayerList') {
-        const layers = data[attributename];
+        const layers = appData[attributename];
         layers.forEach(async function(layer) {
             const packages = layer.Packages;
             
             const ul = document.createElement('ul');
-            ul.innerText = layer.Name;
+            ul.innerHTML = layer.Name;
+        
             packages.forEach(element => {
                 const li = document.createElement('li');
                 const itemText = document.createTextNode(element);
@@ -29,7 +30,7 @@ for(var attributename in data){
 
           })
        
-        console.log(attributename+": "+data[attributename]);
+        console.log(attributename+": "+appData[attributename]);
     }
 
 
