@@ -10,14 +10,24 @@ const ulist = document.getElementById('ulist') //document.querySelector("ul.user
 const mlist = document.getElementById('mlist');
 const runnerlist = document.getElementById('runnerlist');
 
-for(var attributename in sessionData){
-    if(attributename != 'LayerList'){
-        const li = document.createElement('li');
-        const itemText = document.createTextNode(attributename+": "+sessionData[attributename]);
-        li.appendChild(itemText);
-        if((attributename=="Username") || (attributename=="LogOnTime")){
-            ulist.appendChild(li);
+function feedList (obj, objName, list){
+for(var key in obj){
+    if(key == objName){
+        if(obj[key] instanceof Object){
+            feedList(obj[key], objName);
+        } else {
+            console.log("found " +key + " : " + obj[key]);
+            const li = document.createElement('li');
+            const itemText = document.createTextNode(key+": " + obj[key]);
+            li.appendChild(itemText);
+            list.appendChild(li);
         }
+    }
+}
+}
+
+feedList(sessionData, "UserData", ulist);
+    /*
         if((attributename=="Hostname") || (attributename=="IPAddress") || (attributename=="LayerCount")){
             mlist.appendChild(li);
         }
@@ -25,7 +35,8 @@ for(var attributename in sessionData){
             runnerlist.appendChild(li);
         }
     } 
-}
+    */
+
 /*
 const layerList = document.getElementById('layerList');
 

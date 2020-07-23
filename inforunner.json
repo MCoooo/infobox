@@ -1,90 +1,102 @@
 {
-  "RunnerVersion": "1.0.0.0",
-  "TimeStamp": "15/07/2020 05:56:38",
-  "Duration": "0.8839916",
-  "Username": "A124129",
-  "LogOnTime": "14/07/2020 07:28:48",
-  "Hostname": "R01-EU1VDHD0056",
-  "IPAddress": "10.228.69.13",
-  "LayerCount": "9",
-  "LayerList": [
+  "RunnerData":
     {
-      "Name": "Win10-A-AdobeReaderDC-2020-06-11_20-55",
-      "Packages": [
-        "AdobeReaderDC_20.009.20067"
-      ]
+      "RunnerVersion": "1.0.0.0",
+      "TimeStamp": "15/07/2020 05:56:38",
+      "Duration": "0.8839916"
     },
+  "UserData":
     {
-      "Name": "Win10-A-AXAXLTools-2020-04-15_22-05",
-      "Packages": [
-        "AXAXLBackdrop_15/04/2020",
-        "AternityAgent_12.0.0.58",
-        "PassMe_6",
-        "AXAStationaryTemplateBuilder(WithoutAccessRuntime)_1"
-      ]
+      "Username": "A124129",
+      "LogOnTime": "14/07/2020 07:28:48"
     },
+  "MachineData":
     {
-      "Name": "Win10-A-JavaRE-2020-04-15_17-34",
-      "Packages": [
-        "Java8u221_8.0.2210.11",
-        "Java8u144_1.8.0_144 "
-      ]
+      "Hostname": "R01-EU1VDHD0056",
+      "IPAddress": "10.228.69.13"
     },
+  "LayerData":
     {
-      "Name": "Win10-A-McAfeeTools-2020-04-16_17-16",
-      "Packages": [
-        "McAfeeEPOAgent_5.6.2..209",
-        "McAfeeMOVEAgent_4.8.1.175"
-      ]
-    },
-    {
-      "Name": "Win10-A-o365-64bit-2020-06-11_21-52",
-      "Packages": [
-        "Office_16.0.11929.20838",
-        "Project_16.0.11929.20838",
-        "Visio_16.0.11929.20838",
-        "Teams_1.3.00.13565"
-      ]
-    },
-    {
-      "Name": "Win10-A-Powerbroker-2020-03-24_13-29",
-      "Packages": [
-        "Powerbroker_7.8.4.6"
-      ]
-    },
-    {
-      "Name": "Win10-A-SecurityTools-2020-03-24_10-39",
-      "Packages": [
-        "WebSenseDLP_19.03.823",
-        "PhishAlert_1.3.98",
-        "CiscoAMP_7.1.5.11523",
-        "CiscoAmpPostConfig_7.1.5.11523"
-      ]
-    },
-    {
-      "Name": "Win10-O",
-      "Packages": [
-        "BIS-F_7.1912.0",
-        "CitrixAppLayerAgent_20.300.11",
-        "Silverlight_5.1.50918.0",
-        "EdgeEnterprise_InstalledVersion-83.0.478.45",
-        "AzureInformationProtection_InstalledVersion-1.54.59.0",
-        "StartMenuUpdate_LayoutModification-16-03-2020",
-        "Windows10_1909(18363.900)",
-        "GoogleSansFont_1.0",
-        "LanguagePack_English,French,German,Portuguese(Brazil),Spanish",
-        "SQLAlias_10-06-2020",
-        "SQLNativeClient2012_11.4.7001",
-        "AzurePowershellSnapins_June2020"
-      ]
-    },
-    {
-      "Name": "Win10-P-AHV",
-      "Packages": [
-        "CitrixVirtualDesktopAgent_1912-LTSR",
-        "DomainJoin_r01.xlgs.local",
-        "CitrixWorkspacesClient_1912-LTSR"
+      "LayerCount": "9",
+      "LayerList": [
+        {
+          "Name": "Win10-A-AdobeReaderDC-2020-06-11_20-55",
+          "Packages": [
+            "AdobeReaderDC_20.009.20067"
+          ]
+        },
+        {
+          "Name": "Win10-A-AXAXLTools-2020-04-15_22-05",
+          "Packages": [
+            "AXAXLBackdrop_15/04/2020",
+            "AternityAgent_12.0.0.58",
+            "PassMe_6",
+            "AXAStationaryTemplateBuilder(WithoutAccessRuntime)_1"
+          ]
+        },
+        {
+          "Name": "Win10-A-JavaRE-2020-04-15_17-34",
+          "Packages": [
+            "Java8u221_8.0.2210.11",
+            "Java8u144_1.8.0_144 "
+          ]
+        },
+        {
+          "Name": "Win10-A-McAfeeTools-2020-04-16_17-16",
+          "Packages": [
+            "McAfeeEPOAgent_5.6.2..209",
+            "McAfeeMOVEAgent_4.8.1.175"
+          ]
+        },
+        {
+          "Name": "Win10-A-o365-64bit-2020-06-11_21-52",
+          "Packages": [
+            "Office_16.0.11929.20838",
+            "Project_16.0.11929.20838",
+            "Visio_16.0.11929.20838",
+            "Teams_1.3.00.13565"
+          ]
+        },
+        {
+          "Name": "Win10-A-Powerbroker-2020-03-24_13-29",
+          "Packages": [
+            "Powerbroker_7.8.4.6"
+          ]
+        },
+        {
+          "Name": "Win10-A-SecurityTools-2020-03-24_10-39",
+          "Packages": [
+            "WebSenseDLP_19.03.823",
+            "PhishAlert_1.3.98",
+            "CiscoAMP_7.1.5.11523",
+            "CiscoAmpPostConfig_7.1.5.11523"
+          ]
+        },
+        {
+          "Name": "Win10-O",
+          "Packages": [
+            "BIS-F_7.1912.0",
+            "CitrixAppLayerAgent_20.300.11",
+            "Silverlight_5.1.50918.0",
+            "EdgeEnterprise_InstalledVersion-83.0.478.45",
+            "AzureInformationProtection_InstalledVersion-1.54.59.0",
+            "StartMenuUpdate_LayoutModification-16-03-2020",
+            "Windows10_1909(18363.900)",
+            "GoogleSansFont_1.0",
+            "LanguagePack_English,French,German,Portuguese(Brazil),Spanish",
+            "SQLAlias_10-06-2020",
+            "SQLNativeClient2012_11.4.7001",
+            "AzurePowershellSnapins_June2020"
+          ]
+        },
+        {
+          "Name": "Win10-P-AHV",
+          "Packages": [
+            "CitrixVirtualDesktopAgent_1912-LTSR",
+            "DomainJoin_r01.xlgs.local",
+            "CitrixWorkspacesClient_1912-LTSR"
+          ]
+        }
       ]
     }
-  ]
 }
